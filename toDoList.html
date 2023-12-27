@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> To-do List </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/toDoList.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='components/fonts/fonts.css'>
+    <link rel="shortcut icon" href="components/img/Icon3.png" />
+</head>
+<body>
+    <main>
+        <h1>To Do List | DeJota</h1>
+
+        <div class="content">
+            <div class="content--add-item">
+                <!--input, botao -->
+                <input type="text" id="input-nova-tarefa" placeholder="Digite sua nova tarefa">
+                <button onclick="novaTarefa()" id="btn-nova-tarefa" title="Clique aqui para adicionar uma nova tarefa">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                      </svg>
+                </button>
+            </div>
+            <div class="content--body">
+                <ul id="to-do-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="js/toDoList.js"></script>
+</html>
